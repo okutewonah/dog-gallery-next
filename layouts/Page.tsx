@@ -1,4 +1,4 @@
-import { Box } from "@mui/system";
+import { Box, Container, CssBaseline, Grid } from "@mui/material";
 import React from "react";
 import DogCard from "../components/DogCard";
 import Header from "../components/Header";
@@ -13,8 +13,8 @@ const Page:React.FC<Props> = ({children}) => {
     <div id="page">
       <Header />
       <NavBar />
-      <Box style={{flexGrow: 1}} mt={2}>
-        <DogCard />
+      <Box style={{ flexGrow: 1 }}>
+        {children}
       </Box>
     </div>
   )
